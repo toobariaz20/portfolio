@@ -12,7 +12,7 @@ Welcome to my portfolio website! This repository contains the source code for my
 
 ## About Me
 
-**I'm Tooba Riaz, a passionate software developer with a background in computer science. I specialize in front-end development, UI/UX design, and full-stack projects. My goal is to create visually appealing and user-friendly websites that enhance the user experience.**
+**I'm Tooba Riaz, a passionate software developer with a background in computer science. I specialize in mobile app development, front-end development, UI/UX design, and full-stack projects. My goal is to create visually appealing and user-friendly apps and websites that enhance the user experience.**
 
 ## Technologies Used
 
@@ -34,11 +34,11 @@ Welcome to my portfolio website! This repository contains the source code for my
 ## Getting Started
 
 ### Clone the repository: 
-`git clone https://github.com/HamzaZaidiX/My-Portfolio-html-css-js.git`
+`git clone https://github.com/toobariaz20/portfolio.git`
 
-## [Portfolio Website Click Here =>💁‍♂️🚀](https://hamza-zaidi.netlify.app/)
+## [Portfolio Website Click Here =>💁‍♂️🚀](toobariaz20.github.io/portfolio/)
 
-## Screenshot:
-![image](https://github.com/user-attachments/assets/df8f17d8-f5e6-4ee6-be3e-8d38c66ed6ab)
+<!-- ## Screenshot:
+![image](https://github.com/user-attachments/assets/df8f17d8-f5e6-4ee6-be3e-8d38c66ed6ab) -->
 
-**Feel free to explore the code and customize it to suit your needs also Like and Give Heart to `[Tooba Riaz](https://github.com/HamzaZaidiX)` ! Happy coding!**
+**Feel free to explore the code and customize it to suit your needs also Like and Give Heart to `[Tooba Riaz](https://github.com/toobariaz20)` ! Happy coding!**
