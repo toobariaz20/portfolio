@@ -3,36 +3,31 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="title" content="Tooba Riaz - Full Stack Developer Portfolio">
-    <meta name="description"
-        content="Discover Tooba Riaz's professional portfolio showcasing expertise in full-stack development, web applications, and innovative solutions. Explore projects, skills, and achievements.">
-    <meta name="keywords"
-        content="Tooba Riaz, Full Stack Developer, Portfolio, Web Development, React.js, Frontend, Backend, Software Engineer, Professional Portfolio, Innovative Solutions, syed hamza jaffar zaidi, hamza jaffar, portfolio website, hamza">
-    <meta name="author" content="Syed Hamza Jaffar Zaidi">
-    <meta name="robots" content="index, follow">
-    <meta name="language" content="English">
-    <meta name="revisit-after" content="7 days">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="title" content="Tooba Riaz - Senior Full Stack Engineer & Team Lead">
+    <meta name="description"
+        content="Tooba Riaz is a Senior Full Stack Engineer and Team Lead with 6 years of experience building production web platforms, scalable Node.js/TypeScript backends, React dashboards and portals, and native Android apps.">
+    <meta name="keywords"
+        content="Tooba Riaz, Senior Full Stack Engineer, Team Lead, Node.js, TypeScript, React, PostgreSQL, Redis, AWS, Cloudflare Workers, Kotlin, Jetpack Compose, Android, Portfolio">
+    <meta name="author" content="Tooba Riaz">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="Tooba Riaz - Senior Full Stack Engineer">
+    <meta property="og:description"
+        content="Full stack engineer and team lead: Node.js & TypeScript backends, React frontends, AWS & Cloudflare, Kotlin Android apps.">
+    <meta property="og:type" content="website">
     <link rel="icon" type="image/png" href="./assets/img/favicon.png">
-    <title>Tooba Riaz Portfolio</title>
+    <title>Tooba Riaz | Senior Full Stack Engineer</title>
+
     <!--=================== Main CSS ====================-->
     <link rel="stylesheet" href="main.css">
     <!--=================== Google Fonts ====================-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"
         rel="stylesheet">
-
-
-    <!--=================== Remixicons ====================-->
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
-
-    <!--=================== SwiperJS CSS ====================-->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
-
+    <!--=================== Icons ====================-->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
-
 </head>
 
 <body>
@@ -41,649 +36,507 @@
     <header id="header" class="header">
         <div class="container">
             <nav class="nav">
-                <a href="/" class="nav__brand">
-                    <i class="ri-code-s-slash-line"></i>Tooba<Span>Riaz</Span>
+                <a href="#hero" class="nav__brand">
+                    <i class="ri-code-s-slash-line"></i>Tooba<span>Riaz</span>
                 </a>
                 <div class="nav__menu" id="nav-menu">
                     <ul class="nav__list">
-                        <li class="nav__item">
-                            <a href="#hero" class="nav__link">Home</a>
-                        </li>
-                        <li class="nav__item">
-                            <a href="#about" class="nav__link">About</a>
-                        </li>
-                        <li class="nav__item">
-                            <a href="#qualification" class="nav__link">Qualification</a>
-                        </li>
-                        <li class="nav__item">
-                            <a href="#services" class="nav__link">Services</a>
-                        </li>
-                        <li class="nav__item">
-                            <a href="#project" class="nav__link">Projects</a>
-                        </li>
-                        <!-- <li class="nav__item">
-                            <a href="https://shjz.hashnode.dev/" class="nav__link">Blogs</a>
-                        </li> -->
-                        <li class="nav__item">
-                            <a href="#contact" class="nav__link">Contact</a>
-                        </li>
+                        <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+                        <li class="nav__item"><a href="#skills" class="nav__link">Stack</a></li>
+                        <li class="nav__item"><a href="#work" class="nav__link">Work</a></li>
+                        <li class="nav__item"><a href="#experience" class="nav__link">Experience</a></li>
+                        <li class="nav__item"><a href="#services" class="nav__link">Services</a></li>
+                        <li class="nav__item"><a href="#contact" class="nav__link nav__link--cta">Contact</a></li>
                     </ul>
                 </div>
-                <div class="nav__toggle">
+                <button class="nav__toggle" aria-label="Toggle menu">
                     <i id="nav-toggle" class="ri-menu-3-line"></i>
-                </div>
+                </button>
             </nav>
         </div>
     </header>
-    <!--=================== main ====================-->
+
     <main class="main">
         <!--=================== Hero ====================-->
         <section id="hero" class="hero">
             <div class="container">
-                <div class="d-grid hero__wrapper">
+                <div class="hero__wrapper">
                     <div class="hero__content">
-                        <h1 class="hero__title">Hi, I am Tooba Riaz</h1>
-                        <h2 id="typewriter"
-                            style="font-size: 25px; font-weight: bold; color: #ffffff; border-right: 2px solid #ffffff; white-space: nowrap; overflow: hidden; display: inline-block;">
-                        </h2>
-                        <p style="margin-top:15px;" class="hero__description">Experienced App Developer (5+ Years Experience)
-
-I build high-quality, scalable, and modern applications using the latest tools and best practices.
- Whether you need a new app from scratch, an existing app improved, or want to migrate to Jetpack Compose, 
- I’m here to deliver clean, efficient, and production-ready solutions.
-
-
+                        <span class="hero__badge"><span class="dot"></span> Open to senior full stack &amp; lead roles</span>
+                        <h1 class="hero__title">Hi, I'm Tooba Riaz</h1>
+                        <h2 class="hero__role"><span id="typewriter"></span><span class="caret">|</span></h2>
+                        <p class="hero__description">
+                            Senior Full Stack Engineer and Team Lead with <strong>6 years</strong> of shipping
+                            production software. I design and build the whole product: <strong>Node.js &amp;
+                            TypeScript backends</strong> on PostgreSQL and Redis, <strong>React</strong> dashboards,
+                            portals and marketing sites, and <strong>native Android apps</strong> in Kotlin. I deploy
+                            them to AWS and Cloudflare and lead the teams that maintain them.
                         </p>
-                        <a href="mailto:toobariaz726@gmail.com" class="btn--primary"
-                            style="padding:1.5rem 4rem;margin-bottom:10px;display:inline-block;">Hire Me!</a>
-                        <div class="hero__info">
-                            <div class="hero__info-wrapper">
-                                <p class="hero__info-number">50+</p>
-                                <h2 class="hero__info-title">Projects<br>Completed</h2>
+                        <div class="hero__actions">
+                            <a href="#work" class="btn btn--primary">See my work <i class="ri-arrow-right-line"></i></a>
+                            <a href="./assets/Tooba-Riaz-Resume.pdf" download class="btn btn--ghost">
+                                <i class="ri-download-2-line"></i> Download CV</a>
+                        </div>
+                        <ul class="hero__social">
+                            <li><a href="mailto:toobariaz726@gmail.com" aria-label="Email"><i class="ri-mail-line"></i></a></li>
+                            <li><a href="https://www.linkedin.com/in/tooba-riaz-97a30b1b4/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="ri-linkedin-fill"></i></a></li>
+                            <li><a href="https://github.com/toobariaz20" target="_blank" rel="noopener" aria-label="GitHub"><i class="ri-github-fill"></i></a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Code card -->
+                    <div class="hero__visual">
+                        <div class="code-card">
+                            <div class="code-card__bar">
+                                <span></span><span></span><span></span>
+                                <p>tooba.ts</p>
                             </div>
+<pre class="code-card__body"><code><span class="k">const</span> <span class="v">tooba</span> = {
+  <span class="p">role</span>: <span class="s">"Senior Full Stack Engineer"</span>,
+  <span class="p">lead</span>: <span class="b">true</span>,
+  <span class="p">frontend</span>: [<span class="s">"React"</span>, <span class="s">"TypeScript"</span>, <span class="s">"Tailwind"</span>],
+  <span class="p">backend</span>:  [<span class="s">"Node.js"</span>, <span class="s">"Express"</span>, <span class="s">"BullMQ"</span>],
+  <span class="p">data</span>:     [<span class="s">"PostgreSQL"</span>, <span class="s">"Redis"</span>],
+  <span class="p">cloud</span>:    [<span class="s">"AWS"</span>, <span class="s">"Cloudflare"</span>, <span class="s">"Docker"</span>],
+  <span class="p">mobile</span>:   [<span class="s">"Kotlin"</span>, <span class="s">"Jetpack Compose"</span>],
+  <span class="p">ai</span>:       [<span class="s">"MCP"</span>, <span class="s">"OpenAI"</span>, <span class="s">"RAG"</span>],
+};</code></pre>
                         </div>
                     </div>
-                    <img src="assets/img/profile.png" alt="Hamza" class="hero__img" width="400px" height="400px">
+                </div>
+
+                <div class="stats">
+                    <div class="stat"><p class="stat__number">6+</p><p class="stat__label">Years in production software</p></div>
+                    <div class="stat"><p class="stat__number">10+</p><p class="stat__label">Engineers &amp; QA led</p></div>
+                    <div class="stat"><p class="stat__number">50+</p><p class="stat__label">Apps shipped to Play Store</p></div>
+                    <div class="stat"><p class="stat__number">1M+</p><p class="stat__label">Active users reached</p></div>
+                    <div class="stat"><p class="stat__number">10+</p><p class="stat__label">Websites launched</p></div>
+                    <div class="stat"><p class="stat__number">5+</p><p class="stat__label">Dashboards &amp; portals built</p></div>
                 </div>
             </div>
         </section>
+
         <!--=================== About ====================-->
         <section id="about" class="section about">
             <div class="container">
                 <div class="section__header">
-                    <h2 class="section__title">About Me</h2>
-                    <span class="section__subtitle">Who am I</span>
+                    <span class="section__eyebrow">01 / About</span>
+                    <h2 class="section__title">From native mobile to the full stack</h2>
                 </div>
-               <div>
-                        <h3 class="about__title">I'm a Professional and Experienced Software Developer.</h3>
-                        <p class="about__description">I am a dedicated Software Engineer focused on designing and developing scalable, efficient, and user-centered solutions. I enjoy solving complex problems and transforming ideas into reliable software applications. Beyond coding, I continuously explore emerging technologies and refine my skills to stay current in the ever-evolving tech landscape. I’m motivated by new challenges and thrive in collaborative environments where innovation and quality go hand in hand.
+                <div class="about__wrapper">
+                    <div class="about__content">
+                        <p>
+                            I started as an Android engineer. Over four years I shipped 50+ Kotlin and Jetpack Compose
+                            apps with MVVM and Clean Architecture, plus ad and subscription revenue features, for apps
+                            with 1M+ active users. The work kept pulling me toward the API, the database and the web
+                            client behind each app, so I moved across the stack.
                         </p>
-                        <a href="#project" class="btn btn--primary">Know More</a>
-                        <br>
-                        <br>
-                        <br>
+                        <p>
+                            Today I'm <strong>Senior Software Engineer &amp; Team Lead at Primefit</strong>, where I own
+                            product engineering for a complete fitness and membership platform. That covers an
+                            event-driven Node.js backend with a schema-as-code ORM and workflow engine, a TypeScript
+                            membership API, React admin and CRM dashboards, a member portal, an edge-rendered marketing
+                            site on Cloudflare Workers, Stripe and in-app subscription billing, an MCP server for AI
+                            agents, and the native Android app.
+                        </p>
+                        <p>
+                            I care about clear API contracts, safe migrations, test coverage and boring, repeatable
+                            deployments. I also want the people I mentor to ship faster than I did.
+                        </p>
                     </div>
-
-
-                 <div class="d-grid about__wrapper">
-                 
-                    <div class="skills">
-                        <h3 class="skills__title">Technologies I've been working with:</h3>
-                        <div class="skills__wrapper">
-
-                             <div class="skills__content skills__content--wide">
-                                <h4 class="skills__subtitle">Languages/Framework</h4>
-                                <ul class="skills__list">
-                                    <li class="skills__item"><i class="ri-arrow-right-s-fill"></i>
-                                        Java</li>
-                                    <li class="skills__item"><i class="ri-arrow-right-s-fill"></i>
-                                        Kotlin</li>
-                                           <li class="skills__item"><i class="ri-arrow-right-s-fill"></i>
-                                        JavaScript</li>
-                                         <li class="skills__item"><i class="ri-arrow-right-s-fill"></i>
-                                        PHP</li>
-                                    <li class="skills__item"><i class="ri-arrow-right-s-fill"></i>
-                                        Python (Pandas, NumPy)</li>
-                                    <li class="skills__item"><i class="ri-arrow-right-s-fill"></i>
-                                        MySQL</li>
-                                    <li class="skills__item"><i class="ri-arrow-right-s-fill"></i>
-                                        C,C++</li>
-                                         <li class="skills__item"><i class="ri-arrow-right-s-fill"></i>
-                                        React</li>
-                                 
-                                </ul>
-                            </div>
-
-                            
-                            <div class="skills__content skills__content--wide">
-                                <h4 class="skills__subtitle">Mobile</h4>
-                                <ul class="skills__list">
-
-                                    <li class="skills__item"><i class="ri-arrow-right-s-fill"></i>
-                                        Jetpack Compose</li>
-                                    <li class="skills__item"><i class="ri-arrow-right-s-fill"></i>
-                                        XML</li>
-                                    <li class="skills__item"><i class="ri-arrow-right-s-fill"></i>
-                                        MVVM</li>
-                                    <li class="skills__item"><i class="ri-arrow-right-s-fill"></i>
-                                         Room</li>
-                                           <li class="skills__item"><i class="ri-arrow-right-s-fill"></i>
-                                       Dagger-Hilt,Room</li>
-
-                                           <li class="skills__item"><i class="ri-arrow-right-s-fill"></i>
-                                         SQLite</li>
-                         <li class="skills__item"><i class="ri-arrow-right-s-fill"></i>
-                                        Firebase Messaging/Cloud </li>
-                                      
-
-                                        <li class="skills__item"><i class="ri-arrow-right-s-fill"></i>
-                                       Push Notifications</li>
-                                       <li class="skills__item"><i class="ri-arrow-right-s-fill"></i>
-                                       Pusher</li>
-                                           <li class="skills__item"><i class="ri-arrow-right-s-fill"></i>
-                                        REST (Retrofit)</li>
-                                    <li class="skills__item"><i class="ri-arrow-right-s-fill"></i>
-                                        WebSockets</li>
-                                 
-                                      
-                                      
-                                </ul>
-                            </div>
-                            
-
-                    
-                              <div class="skills__content skills__content--wide">
-                                <h4 class="skills__subtitle">Ads/Payment Methods</h4>
-                                <ul class="skills__list">
-                                    <li class="skills__item"><i class="ri-arrow-right-s-fill"></i>
-                                        Google AdMob</li>
-                                    <li class="skills__item"><i class="ri-arrow-right-s-fill"></i>
-                                        In-App Purchases</li>
-                                        <li class="skills__item"><i class="ri-arrow-right-s-fill"></i>
-                                        Apple/Google Pay</li>
-                                    <li class="skills__item"><i class="ri-arrow-right-s-fill"></i>
-                                        Subscription Billing </li>
-                                        <li class="skills__item"><i class="ri-arrow-right-s-fill"></i>
-                                        Stripe </li>
-                                </ul>
-                            </div>
-
-                             
-
-                              <div class="skills__content skills__content--wide">
-                                <h4 class="skills__subtitle">AI/ML</h4>
-                                <ul class="skills__list">
-                                    <li class="skills__item"><i class="ri-arrow-right-s-fill"></i>
-                                        Prompt Engineering</li>
-                                    <li class="skills__item"><i class="ri-arrow-right-s-fill"></i>
-                                        RAG</li>
-                                    <li class="skills__item"><i class="ri-arrow-right-s-fill"></i>
-                                        OpenAI API</li>
-                                    <li class="skills__item"><i class="ri-arrow-right-s-fill"></i>
-                                        LangChain</li>
-                                    <li class="skills__item"><i class="ri-arrow-right-s-fill"></i>
-                                        Hugging Face Transformers</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
+                    <ul class="about__highlights">
+                        <li><i class="ri-stack-line"></i><div><h4>End-to-end ownership</h4><p>Database schema → API → web &amp; mobile clients → CI/CD → production.</p></div></li>
+                        <li><i class="ri-git-branch-line"></i><div><h4>Architecture &amp; scale</h4><p>Event-driven workflows, outbox pattern, queues, schema-as-code, modular monoliths.</p></div></li>
+                        <li><i class="ri-team-line"></i><div><h4>Technical leadership</h4><p>Leading cross-functional teams, code reviews, mentoring, stakeholder communication.</p></div></li>
+                        <li><i class="ri-shield-check-line"></i><div><h4>Security &amp; payments</h4><p>JWT/JOSE auth, Argon2, TOTP 2FA, Stripe, Apple &amp; Google subscription billing.</p></div></li>
+                    </ul>
                 </div>
-                
             </div>
         </section>
 
-        <!--=================== Qualification ====================-->
-        <section id="qualification" class="section qualification">
+        <!--=================== Skills ====================-->
+        <section id="skills" class="section skills">
             <div class="container">
                 <div class="section__header">
-                    <h2 class="section__title">Qualification</h2>
-                    <span class="section__subtitle">Experience & Education</span>
+                    <span class="section__eyebrow">02 / Tech Stack</span>
+                    <h2 class="section__title">Technologies I work with</h2>
+                    <p class="section__lead">Used in production. Most of it runs live at Primefit today.</p>
                 </div>
-                <!--============== Professional Experience ============-->
-                <div class="qualification__wrapper">
-                    <h3 class="qualification__name">
-                        <i class="ri-briefcase-fill"></i>
-                        Professional Experience
-                    </h3>
-                    <div class="d-grid qualification__content">
-                        <!-- Experience 1-->
-                        <div class="qualification__item">
-                            <h3 class="qualification__title">Senior Software Developer & Team Lead at Primefit</h3>
-                            <p class="qualification__description">Currently working as a Senior Full Stack Software Engineer and Team Lead, 
-                                I oversee end-to-end product development across frontend, backend, and mobile platforms.
-                                 I lead cross-functional teams, drive architecture decisions, ensure code quality,
-                                  and collaborate closely with stakeholders to deliver scalable, high-performance solutions aligned with business goals.
-                            </p>
-                            <span class="qualification__date">Currently from 2025</span>
-                        </div>
 
-                         <div class="qualification__item">
-                            <h3 class="qualification__title">Senior Software Developer & Project Manager at Tecjaunt</h3>
-                            <p class="qualification__description">I led a cross-functional team to deliver high-quality mobile applications on time,
-                                 mentoring junior developers and overseeing architecture, API integration, and deployments. I developed and published
-                                  15+ apps, optimized performance using Firebase, implemented scalable REST APIs, and managed complete Google Play
-                                   Console operations including releases and compliance.                            </p>
-                            <span class="qualification__date">From 2022 to 2025</span>
-                        </div>
-
-                           <div class="qualification__item">
-                            <h3 class="qualification__title">Software Developer at OZI Publishing</h3>
-                            <p class="qualification__description">Built and optimized ad-driven Android apps with AdMob,
-                                 increasing revenue by 20% across 100K+ downloads. Led the adoption of Jetpack Compose
-                                  to accelerate UI development and improve maintainability, implemented subscriptions
-                                   and in-app purchases to boost retention, and architected scalable applications using MVVM, 
-                                   Clean Architecture, and Dagger-Hilt, significantly reducing bugs and improving code quality.
-                            </p>
-                            <span class="qualification__date">Form 2020 to 2022</span>
-                        </div>
+                <div class="skills__grid">
+                    <div class="skill-card">
+                        <h3><i class="ri-layout-masonry-line"></i> Frontend</h3>
+                        <ul class="chips">
+                            <li>React 18 / 19</li><li>TypeScript</li><li>React Router 7 (SSR)</li><li>Vite</li>
+                            <li>Redux Toolkit</li><li>TanStack Query</li><li>Tailwind CSS</li><li>shadcn/ui</li>
+                            <li>Radix UI</li><li>React Hook Form</li><li>Zod</li><li>Framer Motion</li><li>GSAP</li>
+                            <li>Recharts</li><li>MDX</li><li>Bootstrap / Reactstrap</li><li>Sass</li><li>HTML5 &amp; CSS3</li>
+                        </ul>
                     </div>
-                </div>
-                <!--============== Education ============-->
-                <div class="qualification__wrapper">
-                    <h3 class="qualification__name">
-                        <i class="ri-booklet-fill"></i>
-                        Education
-                    </h3>
-                    <div class="d-grid qualification__content">
-                        <!-- Education 1-->
-                        <div class="qualification__item">
-                            <h3 class="qualification__title">Bachelor's in Computer Science</h3>
-                            <h4 class="qualification__title">Lahore University For Women</h4>
-                            <p class="qualification__description">As a computer science student, I have a strong
-                                foundation in object-oriented algorithms, data structures, software design and
-                                Development.
-                                My coursework has provided me with a deep understanding of the principles and practices
-                                of computer science,
-                                and I have honed my programming skills through various projects and assignments.
-                            </p>
-                            <span class="qualification__date">Completed in 2020</span>
-                        </div>
-                        <!-- Education 2-->
-                        <div class="qualification__item">
-                            <h3 class="qualification__title">Intermediate</h3>
-                            <h4 class="qualification__title">Govt. Degree College Lahore</h4>
-                            <span class="qualification__date">Completed in 2016</span>
-                        </div>
-                        
+                    <div class="skill-card">
+                        <h3><i class="ri-server-line"></i> Backend</h3>
+                        <ul class="chips">
+                            <li>Node.js 22 / 24</li><li>Express</li><li>TypeScript</li><li>REST API design</li>
+                            <li>Sequelize ORM</li><li>BullMQ job queues</li><li>Event-driven workflows</li>
+                            <li>Transactional outbox</li><li>JSON Schema (AJV)</li><li>WebSockets / Pusher</li>
+                            <li>JWT / JOSE</li><li>Argon2 / bcrypt</li><li>TOTP 2FA</li><li>Helmet</li><li>Pino logging</li>
+                            <li>Nodemailer</li><li>Multer uploads</li><li>Google APIs</li>
+                        </ul>
                     </div>
-                </div>
-                <div class="qualification__footer">
-                    <p class="qualification__footer-text">See my full resume</p>
-                    <a href="./assets/Tooba Riaz.pdf" download class="btn btn--primary">Resume</a>
-                </div>
-            </div>
-        </section>
-
-        <!--=================== services ====================-->
-        <section id="services" class="section services" style="padding: 80px 0; background-color: inherit;">
-            <div style="max-width: 1200px; margin: 0 auto; padding: 0 24px;">
-                <h2 style="font-size: 32px; font-weight: bold; text-align: center; color: white; margin-bottom: 32px;">
-                    Services
-                </h2>
-                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 32px;">
-
-                      <!-- Mobile App Development -->
-                    <div
-                        style="background-color: black; padding: 24px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); transition: transform 0.3s, box-shadow 0.3s;">
-                        <div style="display: flex; justify-content: center; margin-bottom: 16px;">
-                            <i class="ri-smartphone-line" style="font-size: 40px; color: #319795;"></i>
-                        </div>
-                        <h3
-                            style="font-size: 20px; font-weight: 600; text-align: center; margin-bottom: 8px; color: white;">
-                            Mobile App Development
-                        </h3>
-                        <p style="color: #718096; text-align: center;">Building user-friendly mobile applications for
-                            Android platforms using Flutter and React Native.</p>
+                    <div class="skill-card">
+                        <h3><i class="ri-database-2-line"></i> Databases</h3>
+                        <ul class="chips">
+                            <li>PostgreSQL</li><li>Redis</li><li>Schema design &amp; indexing</li>
+                            <li>Umzug migrations</li><li>Firebase Realtime DB</li><li>Firestore</li><li>Room</li><li>SQLite</li>
+                        </ul>
                     </div>
-
-                        <!-- Full-Stack Projects -->
-                    <div
-                        style="background-color: black; padding: 24px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); transition: transform 0.3s, box-shadow 0.3s;">
-                        <div style="display: flex; justify-content: center; margin-bottom: 16px;">
-                            <i class="ri-code-s-slash-line" style="font-size: 40px; color: #48bb78;"></i>
-                        </div>
-                        <h3
-                            style="font-size: 20px; font-weight: 600; text-align: center; margin-bottom: 8px; color: white;">
-                            Full-Stack Projects
-                        </h3>
-                        <p style="color: #718096; text-align: center;">Developing end-to-end web applications with both
-                            front-end and back-end functionalities.</p>
+                    <div class="skill-card">
+                        <h3><i class="ri-cloud-line"></i> Cloud &amp; DevOps</h3>
+                        <ul class="chips">
+                            <li>AWS EC2</li><li>AWS S3 (presigned URLs)</li><li>Cloudflare Workers</li><li>Wrangler</li>
+                            <li>Vercel</li><li>Docker</li><li>Docker Compose</li><li>GitHub Actions CI/CD</li>
+                            <li>Staging / preprod / prod</li><li>Linux &amp; SSH</li>
+                        </ul>
                     </div>
-
-                    <!-- Front-End Development -->
-                    <div
-                        style="background-color: black; padding: 24px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); transition: transform 0.3s, box-shadow 0.3s;">
-                        <div style="display: flex; justify-content: center; margin-bottom: 16px;">
-                            <i class="ri-layout-4-fill" style="font-size: 40px; color: #4299e1;"></i>
-                        </div>
-                        <h3
-                            style="font-size: 20px; font-weight: 600; text-align: center; margin-bottom: 8px; color: white;">
-                            Front-End Development
-                        </h3>
-                        <p style="color: #718096; text-align: center;">Creating responsive and interactive user
-                            interfaces using modern web technologies.</p>
+                    <div class="skill-card">
+                        <h3><i class="ri-bank-card-line"></i> Payments &amp; Integrations</h3>
+                        <ul class="chips">
+                            <li>Stripe API &amp; Elements</li><li>Apple subscriptions</li><li>Google Play Billing</li>
+                            <li>In-app purchases</li><li>Firebase Admin &amp; FCM</li><li>Pusher realtime</li>
+                            <li>Google AdMob</li><li>Calendly</li>
+                        </ul>
                     </div>
-
-                    <!-- UI/UX Design -->
-                    <div
-                        style="background-color: black; padding: 24px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); transition: transform 0.3s, box-shadow 0.3s;">
-                        <div style="display: flex; justify-content: center; margin-bottom: 16px;">
-                            <i class="ri-pen-nib-fill" style="font-size: 40px; color: #9f7aea;"></i>
-                        </div>
-                        <h3
-                            style="font-size: 20px; font-weight: 600; text-align: center; margin-bottom: 8px; color: white;">
-                            UI/UX Design
-                        </h3>
-                        <p style="color: #718096; text-align: center;">Designing intuitive and visually appealing user
-                            experiences for web and mobile applications.</p>
+                    <div class="skill-card">
+                        <h3><i class="ri-smartphone-line"></i> Mobile</h3>
+                        <ul class="chips">
+                            <li>Kotlin</li><li>Java</li><li>Jetpack Compose</li><li>MVVM</li><li>Clean Architecture</li>
+                            <li>Dagger-Hilt</li><li>Retrofit / OkHttp</li><li>Coroutines &amp; Flow</li><li>WorkManager</li>
+                            <li>Navigation</li><li>Coil</li><li>Crashlytics &amp; Analytics</li><li>Google Maps</li><li>Play Console</li>
+                        </ul>
                     </div>
-
-        
-                      <!-- Graphic Designing Services -->
-                    <div
-                        style="background-color: black; padding: 24px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); transition: transform 0.3s, box-shadow 0.3s;">
-                        <div style="display: flex; justify-content: center; margin-bottom: 16px;">
-                            <i class="ri-palette-line" style="font-size: 40px; color: #d45757;"></i>
-                        </div>
-                        <h3
-                            style="font-size: 20px; font-weight: 600; text-align: center; margin-bottom: 8px; color: white;">
-                            Graphic Designing Services
-                        </h3>
-                        <p style="color: #718096; text-align: center;">Delivering innovative designs to elevate your
-                            brand and captivate your audience using Adobe software, Canva, and AI tools.</p>
+                    <div class="skill-card">
+                        <h3><i class="ri-robot-2-line"></i> AI Engineering</h3>
+                        <ul class="chips">
+                            <li>Model Context Protocol (MCP)</li><li>OpenAI API</li><li>LangChain</li><li>RAG</li>
+                            <li>Hugging Face Transformers</li><li>Prompt engineering</li><li>AI-assisted development</li>
+                        </ul>
                     </div>
-
-                    <!-- Social Media Marketing -->
-                    <div
-                        style="background-color: black; padding: 24px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); transition: transform 0.3s, box-shadow 0.3s;">
-                        <div style="display: flex; justify-content: center; margin-bottom: 16px;">
-                            <i class="ri-share-fill" style="font-size: 40px; color: #ecc94b;"></i>
-                        </div>
-                        <h3
-                            style="font-size: 20px; font-weight: 600; text-align: center; margin-bottom: 8px; color: white;">
-                            Social Media Marketing
-                        </h3>
-                        <p style="color: #718096; text-align: center;">Promoting and managing businesses on platforms
-                            like Facebook, Instagram, Twitter, and LinkedIn.</p>
+                    <div class="skill-card">
+                        <h3><i class="ri-test-tube-line"></i> Testing &amp; Quality</h3>
+                        <ul class="chips">
+                            <li>Jest</li><li>Vitest</li><li>Supertest</li><li>Testing Library</li><li>vitest-axe (a11y)</li>
+                            <li>Nock</li><li>ESLint</li><li>Prettier</li><li>oxlint</li><li>Postman &amp; Postman CLI</li>
+                        </ul>
                     </div>
-
-                    <!-- MS Office Services -->
-                    <div
-                        style="background-color: black; padding: 24px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); transition: transform 0.3s, box-shadow 0.3s;">
-                        <div style="display: flex; justify-content: center; margin-bottom: 16px;">
-                            <i class="ri-file-fill" style="font-size: 40px; color: #5a67d8;"></i>
-                        </div>
-                        <h3
-                            style="font-size: 20px; font-weight: 600; text-align: center; margin-bottom: 8px; color: white;">
-                            MS Office Services
-                        </h3>
-                        <p style="color: #718096; text-align: center;">Expertise in MS Word, Excel, PowerPoint, and
-                            Power BI for business productivity solutions.</p>
-                    </div>
-
-                  
-                    <!-- Other Miscellaneous Services -->
-                    <div
-                        style="background-color: black; padding: 24px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); transition: transform 0.3s, box-shadow 0.3s;">
-                        <div style="display: flex; justify-content: center; margin-bottom: 16px;">
-                            <i class="ri-lightbulb-flash-fill" style="font-size: 40px; color: #00ccff;"></i>
-                        </div>
-                        <h3
-                            style="font-size: 20px; font-weight: 600; text-align: center; margin-bottom: 8px; color: white;">
-                            Other Miscellaneous Services
-                        </h3>
-                        <p style="color: #718096; text-align: center;">Providing tailored solutions and custom services
-                            for any unique requirements. You name it, we’ll make it happen!</p>
+                    <div class="skill-card">
+                        <h3><i class="ri-code-box-line"></i> Languages &amp; Tools</h3>
+                        <ul class="chips">
+                            <li>TypeScript</li><li>JavaScript (ES2023)</li><li>Kotlin</li><li>Java</li><li>Python</li>
+                            <li>SQL</li><li>C / C++</li><li>Git</li><li>GitHub</li><li>Bitbucket</li><li>Agile / Scrum</li>
+                        </ul>
                     </div>
                 </div>
             </div>
         </section>
 
-
-        <!--=================== Projects ====================-->
-        <section id="project" class="section project">
+        <!--=================== Work ====================-->
+        <section id="work" class="section work">
             <div class="container">
                 <div class="section__header">
-                    <h2 class="section__title">Projects</h2>
-                    <span class="section__subtitle">My recent work</span>
+                    <span class="section__eyebrow">03 / Featured Work</span>
+                    <h2 class="section__title">The Primefit platform</h2>
+                    <p class="section__lead">
+                        A fitness, coaching and membership business running on one connected platform: a core API,
+                        a membership service, four web frontends, an AI agent server and a native mobile app. I lead
+                        its engineering end to end.
+                    </p>
                 </div>
-                <div class="d-grid project__wrapper">
-                    <!--============== project 1 =============-->
-                    <div class="project__content">
-                        <img src="assets/img/Primefit-App.jpg" alt="Primefit" class="project__img">
-                        <a href="https://play.google.com/store/apps/details?id=ae.primefit.lifestyle" class="project__link">
-                            <h3 class="project__title">Primefit Lifestyle</h3>
-                        </a>
-                        <p class="project__description">Primefit is a smart health and wellness app built around behavior change, consistency, and real coaching support, not quick fixes or generic tracking.</p>
-                        <a href="https://github.com/primefit-tech-uae/lifestyle-app" class="project__link">View Project
-                            <i class="ri-arrow-right-line"></i></a>
+
+                <!-- Architecture strip -->
+                <div class="arch" aria-label="Primefit platform architecture">
+                    <div class="arch__col">
+                        <p class="arch__label">Clients</p>
+                        <span>Marketing site</span><span>Onboarding</span><span>Member portal</span>
+                        <span>Admin dashboard</span><span>CRM</span><span>Android app</span><span>AI agents (MCP)</span>
                     </div>
-                    <!--============== project 2 =============-->
-                    <div class="project__content">
-                        <img src="assets/img/911Limo.jpg" alt="911 Limo " class="project__img">
-                        <a href="https://play.google.com/store/apps/details?id=com.nine_limo" class="project__link">
-                            <h3 class="project__title">911Limo Job Dispatching App</h3>
-                        </a>
-                        <p class="project__description">911Limo is revolutionizing the ground transportation industry by seamlessly connecting service providers facing overflow or specific vehicle needs with a network of skilled drivers and operators in their service area.</p>
-                        <a href="https://play.google.com/store/apps/details?id=com.nine_limo" class="project__link">View Project
-                            <i class="ri-arrow-right-line"></i></a>
+                    <i class="ri-arrow-right-line arch__arrow"></i>
+                    <div class="arch__col">
+                        <p class="arch__label">Services</p>
+                        <span>Core API · Express</span><span>Membership API · TS</span><span>Workflow workers</span><span>Scheduler</span>
                     </div>
-                    <!--============== project 3 =============-->
-                    <div class="project__content">
-                        <img src="assets/img/EOSVolt.jpg" alt="EOSVOLT Charging App" class="project__img">
-                        <a href="https://play.google.com/store/apps/details?id=com.eosvolt.app" class="project__link">
-                            <h3 class="project__title">EOSVOLT Charging App</h3>
-                        </a>
-                        <p class="project__description">EOSVOLT makes EV charging simple and effortless—at home, at work, on the go, or across borders. Our app connects you to charging stations, giving you full control over your charges with smart navigation, seamless payments, and real-time insights.</p>
-                        <a href="https://play.google.com/store/apps/details?id=com.eosvolt.app" class="project__link">View Project
-                            <i class="ri-arrow-right-line"></i></a>
+                    <i class="ri-arrow-right-line arch__arrow"></i>
+                    <div class="arch__col">
+                        <p class="arch__label">Data &amp; infra</p>
+                        <span>PostgreSQL</span><span>Redis · BullMQ</span><span>AWS S3 · EC2</span><span>Cloudflare</span><span>Stripe</span>
                     </div>
-                    <!-- ============== project 4 ============= -->
-                    <div class="project__content">
-                        <img src="assets/img/Hobbiyst.jpg" alt="Hobbyist For All" class="project__img">
-                        <a href="https://play.google.com/store/apps/details?id=com.hobbyist.hobbyistforall" class="project__link">
-                            <h3 class="project__title">Hobbyist For All</h3>
-                        </a>
-                        <p class="project__description">Hobbyist for All is your dedicated space to showcase your projects, exchange ideas, learn techniques, and engage with a vibrant global community of fellow hobbyists.Whether you're a beginner or a seasoned pro, this app is designed to fuel your creativity and bring your passion to life. snowboard, and more</p>
-                        <a href="https://play.google.com/store/apps/details?id=com.hobbyist.hobbyistforall" class="project__link">View Project
-                            <i class="ri-arrow-right-line"></i></a>
-                    </div>
-                
-                   
                 </div>
-                <!-- <div style="align-items: center;justify-content: center;display: flex; margin-top:10px;"><a
-                        href="https://github.com/HamzaZaidiX?tab=repositories" class="btn--primary"
-                        style="padding:1.5rem 4rem;margin-top:10px;display: inline-block;align-items:center;text-align:center;justify-content:center;">View
-                        More Projects
-                        <i style="text-align:center;" class="fa-solid fa-angle-down fa-bounce"></i></a></div> -->
+
+                <div class="work__grid">
+                    <article class="project project--wide">
+                        <div class="project__head">
+                            <i class="ri-server-fill"></i>
+                            <div><p class="project__type">Backend · Architecture</p><h3>Core Platform API</h3></div>
+                        </div>
+                        <p>
+                            A schema-as-code backend. JSON DSL model definitions are validated against a JSON Schema
+                            and materialised into Sequelize models, PostgreSQL tables and generic, role-protected CRUD
+                            endpoints. A non-destructive sync only widens the schema, so the data model can change
+                            without data loss.
+                        </p>
+                        <ul class="project__points">
+                            <li>Event-driven workflow engine with a durable <strong>transactional outbox</strong>, replayer, dispatcher and time-based scheduler on <strong>Redis + BullMQ</strong>, with loop protection for self-triggering events.</li>
+                            <li>Auth with JWT/JOSE and opaque refresh sessions, bcrypt hashing in request pipelines, and per-model role ACLs.</li>
+                            <li>Stripe billing, Apple subscription reconciliation, Firebase push, Pusher realtime, transactional email, and S3 presigned uploads.</li>
+                            <li>Jest + Supertest suites, Postman collections kept in sync with the API docs, and Docker builds deployed by <strong>GitHub Actions to AWS EC2</strong>.</li>
+                        </ul>
+                        <ul class="tags"><li>Node.js</li><li>Express</li><li>PostgreSQL</li><li>Sequelize</li><li>Redis</li><li>BullMQ</li><li>Stripe</li><li>AWS</li><li>Docker</li><li>GitHub Actions</li></ul>
+                    </article>
+
+                    <article class="project">
+                        <div class="project__head">
+                            <i class="ri-vip-crown-2-fill"></i>
+                            <div><p class="project__type">Backend · TypeScript</p><h3>Membership Portal API</h3></div>
+                        </div>
+                        <p>
+                            A standalone TypeScript modular monolith for personal-training memberships, with its own
+                            database, migrations and authentication. Security was designed in from the start.
+                        </p>
+                        <ul class="project__points">
+                            <li>Argon2 password hashing, TOTP two-factor auth, Helmet and Zod-validated contracts.</li>
+                            <li>Background jobs on BullMQ, structured Pino logs, and Umzug migrations.</li>
+                        </ul>
+                        <ul class="tags"><li>TypeScript</li><li>Express</li><li>PostgreSQL</li><li>Redis</li><li>Zod</li><li>Vitest</li></ul>
+                    </article>
+
+                    <article class="project">
+                        <div class="project__head">
+                            <i class="ri-dashboard-3-fill"></i>
+                            <div><p class="project__type">Frontend · Internal tools</p><h3>Admin &amp; CRM Dashboards</h3></div>
+                        </div>
+                        <p>
+                            Operations dashboards that trainers and admins use every day to manage customers,
+                            programmes, daily tasks, content and sales pipelines.
+                        </p>
+                        <ul class="project__points">
+                            <li>Redux Toolkit with persisted state, and realtime updates over Pusher.</li>
+                            <li>CRM built on TanStack Query, React Hook Form + Zod, and Recharts analytics.</li>
+                            <li>Rich Markdown and Mermaid editors for coaching content.</li>
+                        </ul>
+                        <ul class="tags"><li>React</li><li>TypeScript</li><li>Redux Toolkit</li><li>TanStack Query</li><li>Recharts</li><li>Pusher</li></ul>
+                    </article>
+
+                    <article class="project">
+                        <div class="project__head">
+                            <i class="ri-global-fill"></i>
+                            <div><p class="project__type">Frontend · Edge</p><h3>Primefit Website</h3></div>
+                        </div>
+                        <p>
+                            A server-rendered marketing and sales site that runs at the edge on Cloudflare Workers.
+                            It has animated storytelling, MDX content and Stripe checkout.
+                        </p>
+                        <ul class="project__points">
+                            <li>React Router 7 SSR, Tailwind CSS, shadcn/ui and Radix primitives.</li>
+                            <li>Framer Motion, GSAP and Lenis smooth scrolling, plus automated accessibility tests (vitest-axe).</li>
+                        </ul>
+                        <ul class="tags"><li>React Router 7</li><li>Cloudflare Workers</li><li>Tailwind</li><li>shadcn/ui</li><li>GSAP</li><li>Stripe</li></ul>
+                    </article>
+
+                    <article class="project">
+                        <div class="project__head">
+                            <i class="ri-user-heart-fill"></i>
+                            <div><p class="project__type">Frontend · Product</p><h3>Member Portal &amp; Onboarding</h3></div>
+                        </div>
+                        <p>
+                            The member-facing web apps. A multi-step onboarding flow takes payment with Stripe
+                            Elements, and the member portal handles memberships with QR-code check-in.
+                        </p>
+                        <ul class="tags"><li>React</li><li>TypeScript</li><li>Vite</li><li>Tailwind 4</li><li>Stripe Elements</li><li>Vitest</li></ul>
+                    </article>
+
+                    <article class="project">
+                        <div class="project__head">
+                            <i class="ri-robot-2-fill"></i>
+                            <div><p class="project__type">AI · Integration</p><h3>Primefit MCP Server</h3></div>
+                        </div>
+                        <p>
+                            A Model Context Protocol server that gives AI agents safe, customer-scoped tools on top of
+                            the platform's CRUD API. Inputs are validated with Zod, and agents are limited to the
+                            customer's own data.
+                        </p>
+                        <ul class="tags"><li>MCP SDK</li><li>TypeScript</li><li>Zod</li><li>PostgreSQL</li></ul>
+                    </article>
+
+                    <article class="project">
+                        <div class="project__head">
+                            <i class="ri-android-fill"></i>
+                            <div><p class="project__type">Mobile · Android</p><h3>Primefit Lifestyle App</h3></div>
+                        </div>
+                        <p>
+                            The native Android client for members, built with Jetpack Compose. It integrates
+                            subscriptions, push notifications and crash monitoring with the platform API.
+                        </p>
+                        <ul class="tags"><li>Kotlin</li><li>Jetpack Compose</li><li>Hilt</li><li>Retrofit</li><li>Play Billing</li><li>FCM</li></ul>
+                    </article>
+                </div>
+
+                <h3 class="work__subtitle">Other selected work</h3>
+                <div class="work__grid work__grid--compact">
+                    <article class="project project--compact">
+                        <div class="project__head">
+                            <i class="ri-sparkling-2-fill"></i>
+                            <div><p class="project__type">Full stack · AI</p><h3>AI Automation Agency Website</h3></div>
+                        </div>
+                        <p>A React + Vite site with an OpenAI-powered assistant served from Vercel serverless functions, and Calendly booking.</p>
+                        <ul class="tags"><li>React</li><li>OpenAI</li><li>Vercel</li></ul>
+                    </article>
+                    <article class="project project--compact">
+                        <div class="project__head">
+                            <i class="ri-advertisement-fill"></i>
+                            <div><p class="project__type">Mobile · Revenue</p><h3>Ad &amp; Subscription Android Apps</h3></div>
+                        </div>
+                        <p>Ad-driven apps for 1M+ users at OZI Publishing. Better ad placement raised revenue 20%, and subscriptions raised retention 25%.</p>
+                        <ul class="tags"><li>Kotlin</li><li>Compose</li><li>AdMob</li><li>Billing</li></ul>
+                    </article>
+                    <article class="project project--compact">
+                        <div class="project__head">
+                            <i class="ri-store-2-fill"></i>
+                            <div><p class="project__type">Mobile · Client work</p><h3>50+ Client Android Apps</h3></div>
+                        </div>
+                        <p>E-commerce and business apps for many industries, with Retrofit network layers, offline caching and real-time sync.</p>
+                        <ul class="tags"><li>Kotlin</li><li>Retrofit</li><li>Room</li><li>Firebase</li></ul>
+                    </article>
+                </div>
             </div>
-
         </section>
 
-        </div>
-        <div class="swiper-pagination"></div>
-        </div>
-        </div>
-        </section>
-
-
-         <!--=================== Qualification ====================-->
-        <section id="qualification" class="section qualification">
+        <!--=================== Experience ====================-->
+        <section id="experience" class="section experience">
             <div class="container">
                 <div class="section__header">
-                    <h2 class="section__title">Life Beyond Code</h2>
-                    <span class="section__subtitle">Hobbies & Interests</span>
+                    <span class="section__eyebrow">04 / Experience</span>
+                    <h2 class="section__title">Where I've worked</h2>
                 </div>
-                <!--============== Hobbies ============-->
-               <p class="qualification__description">🎨 Sketching | 📸 Photography | 🎯 Design — Nurturing creativity and a sharp eye for detail, inspiring innovative thinking and problem-solving in AI and software development.
-                            </p>
+
+                <ol class="timeline">
+                    <li class="timeline__item">
+                        <div class="timeline__meta"><span class="timeline__date">Oct 2025 – Present</span><span class="timeline__company">Primefit</span></div>
+                        <div class="timeline__body">
+                            <h3>Senior Full Stack Software Engineer · Team Lead</h3>
+                            <ul>
+                                <li>Own end-to-end engineering of the Primefit platform across backend, web and mobile, and lead and mentor the development team.</li>
+                                <li>Architected an event-driven Node.js/PostgreSQL backend with a schema-as-code ORM, a Redis/BullMQ workflow engine, and a transactional outbox.</li>
+                                <li>Built a TypeScript membership API (Argon2, TOTP 2FA, Zod) plus React admin, CRM, onboarding and member-portal frontends.</li>
+                                <li>Shipped an edge-rendered website on Cloudflare Workers, Stripe and Apple subscription billing, and an MCP server for AI agents.</li>
+                                <li>Set up Docker environments and GitHub Actions pipelines to AWS EC2, and enforced testing, code review and documentation standards.</li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="timeline__item">
+                        <div class="timeline__meta"><span class="timeline__date">Jan 2024 – Jun 2025</span><span class="timeline__company">Tecjaunt</span></div>
+                        <div class="timeline__body">
+                            <h3>Senior Software Engineer · Project Lead</h3>
+                            <ul>
+                                <li>Led a cross-functional team of 10+ developers and QA engineers, optimised Agile workflows, and bridged the Android and web teams.</li>
+                                <li>Designed scalable API contracts in Postman and optimised PostgreSQL schemas for faster, more reliable mobile sync.</li>
+                                <li>Mentored juniors in Kotlin, Compose and API integration, which cut onboarding time by 40%.</li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="timeline__item">
+                        <div class="timeline__meta"><span class="timeline__date">Sep 2022 – Jan 2024</span><span class="timeline__company">OZI Publishing</span></div>
+                        <div class="timeline__body">
+                            <h3>Android Developer · Kotlin / Jetpack Compose</h3>
+                            <ul>
+                                <li>Built ad-driven apps for 1M+ active users. Optimised AdMob placement lifted ad revenue by 20%.</li>
+                                <li>Led the move to Jetpack Compose, which cut UI development time by 35%. Subscriptions and IAP boosted retention by 25%.</li>
+                                <li>Applied MVVM, Clean Architecture and Hilt across modules, which reduced production bugs by 50%.</li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="timeline__item">
+                        <div class="timeline__meta"><span class="timeline__date">Nov 2020 – Aug 2022</span><span class="timeline__company">Tecjaunt</span></div>
+                        <div class="timeline__body">
+                            <h3>Android Developer</h3>
+                            <ul>
+                                <li>Delivered 50+ production Android apps with backend and UI/UX teams for clients across industries.</li>
+                                <li>Built Retrofit/OkHttp network layers with caching. Crashlytics-driven fixes reduced crashes by 30%.</li>
+                                <li>Ran Play Console operations end to end: signing, staged rollouts, publishing and compliance.</li>
+                            </ul>
+                        </div>
+                    </li>
+                </ol>
+
+                <div class="education">
+                    <i class="ri-graduation-cap-fill"></i>
+                    <div>
+                        <h3>BS (Hons) Computer Science</h3>
+                        <p>Lahore College for Women University · 2016 – 2020 · CGPA 3.82 / 4.00</p>
+                    </div>
+                    <a href="./assets/Tooba-Riaz-Resume.pdf" download class="btn btn--ghost"><i class="ri-download-2-line"></i> Full CV</a>
+                </div>
+            </div>
+        </section>
+
+        <!--=================== Services ====================-->
+        <section id="services" class="section services">
+            <div class="container">
+                <div class="section__header">
+                    <span class="section__eyebrow">05 / Services</span>
+                    <h2 class="section__title">How I can help</h2>
+                </div>
+                <div class="services__grid">
+                    <div class="service"><i class="ri-stack-fill"></i><h3>Full Stack Product Development</h3><p>From idea to production: API, database, web app and deployment, built to be maintained.</p></div>
+                    <div class="service"><i class="ri-server-fill"></i><h3>Backend &amp; API Architecture</h3><p>Node.js/TypeScript services, PostgreSQL schemas, queues, workflows, auth and integrations.</p></div>
+                    <div class="service"><i class="ri-dashboard-fill"></i><h3>Dashboards &amp; Portals</h3><p>Admin panels, CRMs and customer portals in React that teams can work in all day.</p></div>
+                    <div class="service"><i class="ri-bank-card-fill"></i><h3>Payments &amp; Subscriptions</h3><p>Stripe, Apple and Google Play billing with webhooks, reconciliation and entitlement logic.</p></div>
+                    <div class="service"><i class="ri-smartphone-fill"></i><h3>Native Android Apps</h3><p>Kotlin and Jetpack Compose apps with clean architecture, from build to Play Store release.</p></div>
+                    <div class="service"><i class="ri-robot-2-fill"></i><h3>AI Integrations</h3><p>MCP servers, LLM features, RAG and AI agents connected safely to your real data.</p></div>
+                    <div class="service"><i class="ri-cloud-fill"></i><h3>Cloud &amp; CI/CD</h3><p>Docker, GitHub Actions, AWS and Cloudflare Workers deployments with staging environments.</p></div>
+                    <div class="service"><i class="ri-team-fill"></i><h3>Technical Leadership</h3><p>Team leading, architecture reviews, mentoring and delivery planning with stakeholders.</p></div>
+                </div>
             </div>
         </section>
 
         <!--=================== Contact ====================-->
         <section id="contact" class="section contact">
             <div class="container">
-                <div class="d-grid contact__wrapper">
+                <div class="contact__card">
                     <div class="contact__content">
-                        <h2 class="contact__title">Interested in working together? Let's talk</h2>
+                        <span class="section__eyebrow">06 / Contact</span>
+                        <h2 class="contact__title">Let's build something reliable together.</h2>
                         <p class="contact__description">
-                            Ready to work together on your next software project? I'd love to hear from you!
-                            Feel free to get in touch using the contact information below.
-                            Whether you have a specific project in mind or just want to chat about your software
-                            development needs , I am here to help.
-                            I will respond to your message as quickly as possible and look forward to connecting with
-                            you soon.
+                            I'm open to senior full stack, backend and engineering lead roles, and to selected freelance
+                            projects. Tell me what you're building and I'll get back to you quickly.
                         </p>
+                        <a href="mailto:toobariaz726@gmail.com" class="btn btn--primary">Say hello <i class="ri-send-plane-fill"></i></a>
                     </div>
-                    <div class="contact__btn">
-                        <a style="align-items:center; gap:10px; text-align:center;"
-                            href="https://www.linkedin.com/in/tooba-riaz-97a30b1b4/" class="btn btn--secondary">Get in touch
-                            <i class="fa-solid fa-handshake"></i></a>
-                    </div>
+                    <ul class="contact__list">
+                        <li><i class="ri-mail-fill"></i><div><p>Email</p><a href="mailto:toobariaz726@gmail.com">toobariaz726@gmail.com</a></div></li>
+                        <li><i class="ri-linkedin-box-fill"></i><div><p>LinkedIn</p><a href="https://www.linkedin.com/in/tooba-riaz-97a30b1b4/" target="_blank" rel="noopener">in/tooba-riaz</a></div></li>
+                        <li><i class="ri-phone-fill"></i><div><p>Phone</p><a href="tel:+923024204672">+92 302 4204672</a></div></li>
+                        <li><i class="ri-map-pin-2-fill"></i><div><p>Location</p><span>Lahore, PK (GMT+5) · Remote</span></div></li>
+                    </ul>
                 </div>
-                <!-- Contact Form -->
-                <!-- <div
-                    style="display: flex; min-height: 100vh; font-family: 'Montserrat', sans-serif; font-weight: 700; letter-spacing: 1.4px; margin-top: 10px;">
-                    <div style="flex: 0 1 700px; margin: auto; padding: 10px; width: 100%;">
-                        <div
-                            style="position: relative; background: #3e3e3e; border-radius: 15px; box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4); width: 100%;">
-                            <div
-                                style="display: flex; align-items: center; padding: 10px 20px; background: #4d4d4f; border-top-left-radius: 15px; border-top-right-radius: 15px;">
-                                <div style="margin-right: auto;">
-                                    <div
-                                        style="display: inline-block; width: 8px; height: 8px; margin-right: 3px; border-radius: 8px; background: #ed1c6f;">
-                                    </div>
-                                    <div
-                                        style="display: inline-block; width: 8px; height: 8px; margin-right: 3px; border-radius: 8px; background: #e8e925;">
-                                    </div>
-                                    <div
-                                        style="display: inline-block; width: 8px; height: 8px; border-radius: 8px; background: #74c54f;">
-                                    </div>
-                                </div>
-                            </div>
-                            <div style="display: flex; flex-wrap: wrap; flex-direction: column; padding: 20px;">
-                                <div style="flex: 1; padding: 20px; color: #32a852;">
-                                    <div style="font-size: 26px; margin-bottom: 10px;">
-                                        <span>CONTACT ME</span>
-                                    </div>
-                                </div>
-                                <div style="">
-                                    <!-- Embed Google Form -->
-                                    <!-- <iframe
-                                        src="https://docs.google.com/forms/d/e/1FAIpQLScEgPBHT_SO-kOkbiZ_-qinQ5Oxl3ByqMWKsocY7SscN0eK8w/viewform?embedded=true"
-                                        width="100%" height="500" frameborder="0" marginheight="0" marginwidth="0">
-                                    </iframe>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div> --> 
-            </div>
-
             </div>
         </section>
     </main>
-    <!--=================== footer ====================-->
-    <footer id="footer" class="footer">
-        <div class="container">
-            <div class="d-grid footer__wrapper"
-                style="display:flex;justify-content:center; align-items:center; text-align:center;">
-                <div class="footer__content">
-                    <h4 class="footer__title">Follow Me</h4>
-                    <ul class="footer__social-list">
-                        <li class="footer__social-item">
-                            <a href="mailto:toobariaz726@gmail.com" target="_blank" class="footer__social-link">
-                                <i class="fa-regular fa-envelope fa-beat-fade"></i>
-                            </a>
-                        </li>
-<!-- 
-                        <li class="footer__social-item">
-                            <a href="https://api.whatsapp.com/send?phone=923352851947&app=facebook&entry_point=page_cta&fbclid=IwY2xjawGy26kBHUhVHIUy2pIkHelXuOqxRbDCgRi-MgHY7s7Ca9QM4aTeZvJRiN2J9FbU5Q"
-                                target="_blank" class="footer__social-link">
-                                <i class="fa-brands fa-whatsapp fa-beat-fade"></i>
-                            </a>
-                        </li>
-                        <li class="footer__social-item">
-                            <a href="https://www.instagram.com/hamza_zaidi_x" target="_blank"
-                                class="footer__social-link">
-                                <i class="fa-brands fa-instagram fa-beat-fade"></i>
-                            </a>
-                        </li> -->
-                        <li class="footer__social-item">
-                            <a href="https://www.linkedin.com/in/tooba-riaz-97a30b1b4/" target="_blank" class="footer__social-link">
-                                <i class="fa-brands fa-linkedin-in fa-beat-fade"></i>
-                            </a>
-                        </li>
-                        <!-- <li class="footer__social-item">
-                            <a href="https://github.com/HamzaZaidiX" target="_blank" class="footer__social-link">
-                                <i class="fa-brands fa-github fa-fade"></i>
-                            </a>
-                        </li>
-                        <li class="footer__social-item">
-                            <a href="https://twitter.com/hamzajzaidi" target="_blank" class="footer__social-link">
-                                <i class="fa-brands fa-square-x-twitter fa-fade"></i>
-                            </a>
-                        </li> -->
-                    </ul>
-                </div>
 
-            </div>
-            <p class="footer__copyright">&copy; 2026 Tooba Riaz. All Rights Reserved</p>
+    <!--=================== Footer ====================-->
+    <footer id="footer" class="footer">
+        <div class="container footer__wrapper">
+            <p class="footer__copyright">&copy; {currentYear} Tooba Riaz. All rights reserved.</p>
+            <ul class="footer__social-list">
+                <li><a href="mailto:toobariaz726@gmail.com" class="footer__social-link" aria-label="Email"><i class="ri-mail-line"></i></a></li>
+                <li><a href="https://www.linkedin.com/in/tooba-riaz-97a30b1b4/" target="_blank" rel="noopener" class="footer__social-link" aria-label="LinkedIn"><i class="ri-linkedin-fill"></i></a></li>
+                <li><a href="https://github.com/toobariaz20" target="_blank" rel="noopener" class="footer__social-link" aria-label="GitHub"><i class="ri-github-fill"></i></a></li>
+            </ul>
         </div>
     </footer>
 
-    <!--=================== SwiperJS  ====================-->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-
     <!--=================== ScrollReveal ==================-->
-    <script src="https://unpkg.com/scrollreveal"></script>
-
+    <script src="https://cdn.jsdelivr.net/npm/scrollreveal@4.0.9/dist/scrollreveal.min.js"></script>
     <!--=================== Main JS ====================-->
     <script src="assets/js/main.js"></script>
 </body>
 
 </html>
-
-<script>
-    const typewriterTexts = [
-      "Mobile App Developer",
-      "Software Engineer",
-      "Project Manager | Scrum Master", 
-      "Full Stack Developer",
-      "Creative Problem Solver",
-      "AI Integration Specialist",
-      "AI Enthusiast",
-      "Tech Innovator"
-    ];
-
-    let currentTextIndex = 0;
-    let charIndex = 0;
-
-    const typewriterElement = document.getElementById("typewriter");
-
-    function typeEffect() {
-      // Get the current text
-      const currentText = typewriterTexts[currentTextIndex];
-
-      // Update the text content with the next character
-      typewriterElement.textContent = currentText.slice(0, charIndex);
-      
-
-      // Increment the character index
-      charIndex++;
-
-      // If the full text has been typed, pause and then switch to the next text
-      if (charIndex > currentText.length) {
-        setTimeout(() => {
-          charIndex = 0; // Reset character index
-          currentTextIndex = (currentTextIndex + 1) % typewriterTexts.length; // Move to next text
-        }, 2000); // Pause before switching
-      }
-
-      // Continue typing every 100ms
-      setTimeout(typeEffect, 100);
-    }
-
-    // Start the typewriter effect
-    typeEffect();
-</script>

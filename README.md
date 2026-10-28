@@ -1,44 +1,22 @@
-# Tooba Riaz's Portfolio Website 🌐
+# Tooba Riaz — Portfolio
 
-Welcome to my portfolio website! This repository contains the source code for my personal website, showcasing my skills, projects, and experiences.
+Personal portfolio of **Tooba Riaz**, Senior Full Stack Engineer & Team Lead (Node.js · TypeScript · React · PostgreSQL · AWS · Cloudflare · Kotlin/Android).
 
-## Table of Contents
+## Stack
 
-- [About Me](#about-me)
-- [Technologies Used](#technologies-used)
-- [Features](#features)
-- [Getting Started](#getting-started)
-<!-- - [Screenshot](#screenshot) -->
+Plain HTML, CSS and JavaScript. No build step. Remix Icon, Google Fonts and ScrollReveal are loaded from a CDN.
 
-## About Me
+## Run locally
 
-**I'm Tooba Riaz, a passionate software developer with a background in computer science. I specialize in mobile app development, front-end development, UI/UX design, and full-stack projects. My goal is to create visually appealing and user-friendly apps and websites that enhance the user experience.**
+Open `index.html` in a browser, or serve the folder with any static server, for example:
 
-## Technologies Used
+```bash
+npx serve .
+```
 
-- HTML5
-- CSS3
-- JavaScript
+## Structure
 
-## Features
-
-- Responsive design
-- Clean and modern UI/UX
-- Smooth animations and transitions
-- Interactive elements
-- Real-time data fetching (if applicable)
-- Cross-browser compatibility
-- SEO optimization
-- Accessibility considerations
-
-## Getting Started
-
-### Clone the repository: 
-`git clone https://github.com/toobariaz20/portfolio.git`
-
-## [Portfolio Website Click Here =>💁‍♂️🚀](toobariaz20.github.io/portfolio/)
-
-<!-- ## Screenshot:
-![image](https://github.com/user-attachments/assets/df8f17d8-f5e6-4ee6-be3e-8d38c66ed6ab) -->
-
-**Feel free to explore the code and customize it to suit your needs also Like and Give Heart to `[Tooba Riaz](https://github.com/toobariaz20)` ! Happy coding!**
+- `index.html` holds all page content: hero, about, tech stack, Primefit work, experience, services and contact.
+- `main.css` holds the styles and responsive breakpoints.
+- `assets/js/main.js` handles the mobile nav, sticky header, typewriter and scroll animations.
+- `assets/Tooba-Riaz-Resume.pdf` is the CV behind the download buttons. Edit `cv/resume.html`, then re-export it to PDF and copy it here.

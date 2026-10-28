@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Tooba Riaz - Senior Full Stack Engineer CV</title>
+<style>
+  @page { size: A4; margin: 13mm 14mm; }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: "Segoe UI", Calibri, Arial, sans-serif;
+    font-size: 9.6pt;
+    line-height: 1.42;
+    color: #1f2933;
+  }
+  a { color: inherit; text-decoration: none; }
+  header { border-bottom: 2px solid #1d8c5f; padding-bottom: 8px; margin-bottom: 10px; }
+  h1 { margin: 0; font-size: 22pt; letter-spacing: -0.3px; color: #111; }
+  .title { margin: 2px 0 6px; font-size: 11.5pt; font-weight: 600; color: #1d8c5f; }
+  .contact { font-size: 8.8pt; color: #3e4c59; }
+  .contact span + span::before { content: "·"; margin: 0 6px; color: #9aa5b1; }
+  h2 {
+    margin: 12px 0 6px;
+    font-size: 10.5pt;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+    color: #1d8c5f;
+    border-bottom: 1px solid #d9e2ec;
+    padding-bottom: 2px;
+  }
+  p { margin: 0; }
+  .summary { text-align: justify; }
+  .job { margin-bottom: 9px; break-inside: avoid-page; }
+  .job__head { display: flex; justify-content: space-between; align-items: baseline; }
+  .job__company { font-weight: 700; font-size: 10.4pt; color: #111; }
+  .job__date { font-size: 8.8pt; color: #52606d; white-space: nowrap; }
+  .job__role { font-weight: 600; font-style: italic; color: #3e4c59; margin-bottom: 3px; }
+  ul { margin: 0; padding-left: 15px; }
+  li { margin-bottom: 2.5px; }
+  li::marker { color: #1d8c5f; }
+  .skills { display: grid; grid-template-columns: 128px 1fr; row-gap: 3px; column-gap: 8px; }
+  .skills dt { font-weight: 700; color: #111; }
+  .skills dd { margin: 0; }
+  .projects li { margin-bottom: 3px; }
+  .edu { display: flex; justify-content: space-between; align-items: baseline; }
+  b { color: #111; }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Tooba Riaz</h1>
+  <p class="title">Senior Full Stack Software Engineer | Team Lead</p>
+  <p class="contact">
+    <span>Lahore, PK (GMT+5) · Open to remote</span>
+    <span><a href="mailto:toobariaz726@gmail.com">toobariaz726@gmail.com</a></span>
+    <span>+92 302 4204672</span>
+    <span><a href="https://www.linkedin.com/in/tooba-riaz-97a30b1b4/">linkedin.com/in/tooba-riaz-97a30b1b4</a></span>
+    <span><a href="https://github.com/toobariaz20">github.com/toobariaz20</a></span>
+    <span><a href="https://toobariaz20.github.io/portfolio/">Portfolio</a></span>
+  </p>
+</header>
+
+<h2>Professional Summary</h2>
+<p class="summary">
+  Senior Full Stack Software Engineer and Team Lead with <b>6+ years</b> of experience building production software across
+  web, backend and mobile. I design and ship complete products: event-driven <b>Node.js / TypeScript</b> backends on
+  <b>PostgreSQL</b> and <b>Redis</b>, <b>React</b> dashboards, portals and edge-rendered websites, and native
+  <b>Android</b> apps in Kotlin. I deploy them to <b>AWS</b> and <b>Cloudflare</b> with Docker and GitHub Actions.
+  I have delivered <b>50+ Play Store apps</b> reaching <b>1M+ active users</b>, <b>10+ websites</b> and
+  <b>5+ dashboards and portals</b>, and have led cross-functional teams of 10+ engineers. I also integrate payments
+  (Stripe, Apple, Google Play) and AI (MCP servers, OpenAI, RAG).
+</p>
+
+<h2>Work Experience</h2>
+
+<div class="job">
+  <div class="job__head"><span class="job__company">Primefit</span><span class="job__date">Oct 2025 – Present</span></div>
+  <p class="job__role">Senior Full Stack Software Engineer | Team Lead</p>
+  <ul>
+    <li>Own end-to-end engineering of the Primefit fitness and membership platform across backend, web and mobile; lead and mentor the development team and work with product and stakeholders on delivery.</li>
+    <li>Architected a <b>schema-as-code Node.js / Express backend</b> in which JSON DSL models generate Sequelize models, PostgreSQL tables and role-protected CRUD APIs, with non-destructive schema sync for zero-data-loss releases.</li>
+    <li>Built an <b>event-driven workflow engine on Redis + BullMQ</b> with a transactional outbox, replayer, dispatcher and scheduler, so business automations run reliably without duplicate or lost events.</li>
+    <li>Delivered a <b>TypeScript membership API</b> (modular monolith) with Argon2 hashing, TOTP two-factor auth, Zod validation, Helmet, structured Pino logging and Umzug migrations.</li>
+    <li>Built <b>React</b> frontends: an admin dashboard (Redux Toolkit, Pusher realtime), a CRM (TanStack Query, React Hook Form, Zod, Recharts), a member portal with QR check-in, and a Stripe-powered onboarding flow.</li>
+    <li>Shipped the marketing website on <b>React Router 7 SSR + Cloudflare Workers</b> with Tailwind CSS, shadcn/ui, GSAP and automated accessibility tests.</li>
+    <li>Integrated <b>Stripe</b>, Apple subscription reconciliation, Google Play Billing, Firebase push notifications, AWS S3 presigned uploads and transactional email.</li>
+    <li>Built a <b>Model Context Protocol (MCP) server</b> that gives AI agents safe, customer-scoped access to platform data.</li>
+    <li>Set up Docker environments and <b>GitHub Actions CI/CD to AWS EC2</b> and Cloudflare; enforced testing (Jest, Vitest, Supertest), code review and API documentation with Postman.</li>
+  </ul>
+</div>
+
+<div class="job">
+  <div class="job__head"><span class="job__company">Tecjaunt</span><span class="job__date">Jan 2024 – Jun 2025</span></div>
+  <p class="job__role">Senior Software Engineer | Project Lead</p>
+  <ul>
+    <li>Led a cross-functional team of 10+ developers and QA engineers, delivering client projects on time by optimising Agile workflows and strengthening collaboration between Android and web teams.</li>
+    <li>Designed scalable REST API contracts in Postman and optimised PostgreSQL schemas for faster, more reliable mobile data synchronisation.</li>
+    <li>Mentored junior developers in Kotlin, Jetpack Compose and API integration, <b>reducing onboarding time by 40%</b>.</li>
+    <li>Managed end-to-end delivery of high-traffic applications, including client communication, architecture decisions, server deployments and Google Play releases.</li>
+  </ul>
+</div>
+
+<div class="job">
+  <div class="job__head"><span class="job__company">OZI Publishing</span><span class="job__date">Sep 2022 – Jan 2024</span></div>
+  <p class="job__role">Android Developer (Kotlin / Jetpack Compose)</p>
+  <ul>
+    <li>Built high-performance, ad-driven Android apps used by <b>1M+ active users</b>; optimised AdMob placement (interstitial, app-open and rewarded ads) across user flows, <b>increasing ad revenue by 20%</b>.</li>
+    <li>Led the adoption of Jetpack Compose for UI and state management, <b>cutting UI development time by 35%</b> and improving maintainability across app modules.</li>
+    <li>Implemented subscriptions and in-app purchases with Google Play Billing, <b>boosting user retention by 25%</b> and growing recurring revenue.</li>
+    <li>Architected apps with MVVM, Clean Architecture and Dagger-Hilt, with modular code and strict code reviews, <b>reducing production bugs by 50%</b>.</li>
+  </ul>
+</div>
+
+<div class="job">
+  <div class="job__head"><span class="job__company">Tecjaunt</span><span class="job__date">Nov 2020 – Aug 2022</span></div>
+  <p class="job__role">Android Developer</p>
+  <ul>
+    <li>Developed production-ready Android apps with backend developers and UI/UX designers for clients across e-commerce and other industries, contributing to <b>50+ apps shipped to the Play Store</b>.</li>
+    <li>Built robust network layers with Retrofit and OkHttp, including error handling and caching, for real-time data synchronisation.</li>
+    <li>Used Firebase Crashlytics and Analytics to monitor and fix issues, <b>reducing app crashes by 30%</b>.</li>
+    <li>Managed Google Play Console operations end to end: signing keys, staged rollouts, publishing and policy compliance.</li>
+  </ul>
+</div>
+
+<h2>Technical Skills</h2>
+<dl class="skills">
+  <dt>Languages</dt><dd>TypeScript, JavaScript (ES2023), Kotlin, Java, Python, SQL, C/C++</dd>
+  <dt>Frontend</dt><dd>React, React Router 7 (SSR), Vite, Redux Toolkit, TanStack Query, Tailwind CSS, shadcn/ui, Radix UI, React Hook Form, Zod, Framer Motion, GSAP, Recharts, Bootstrap, Sass, HTML5, CSS3</dd>
+  <dt>Backend</dt><dd>Node.js, Express, REST API design, Sequelize, BullMQ, event-driven architecture, outbox pattern, WebSockets / Pusher, JWT / JOSE, Argon2 / bcrypt, TOTP 2FA</dd>
+  <dt>Databases</dt><dd>PostgreSQL, Redis, Firebase Realtime Database, Firestore, Room, SQLite</dd>
+  <dt>Cloud &amp; DevOps</dt><dd>AWS (EC2, S3), Cloudflare Workers, Vercel, Docker, Docker Compose, GitHub Actions CI/CD, Linux</dd>
+  <dt>Payments</dt><dd>Stripe, Apple subscriptions, Google Play Billing, in-app purchases, Google AdMob</dd>
+  <dt>Mobile</dt><dd>Jetpack Compose, MVVM, Clean Architecture, Dagger-Hilt, Retrofit / OkHttp, Coroutines, Flow, WorkManager, Navigation, Firebase (FCM, Crashlytics, Analytics), Google Maps, Play Console</dd>
+  <dt>AI / ML</dt><dd>MCP servers, OpenAI API, LangChain, RAG, Hugging Face Transformers, prompt engineering, Pandas, NumPy</dd>
+  <dt>Testing &amp; Tools</dt><dd>Jest, Vitest, Supertest, Testing Library, ESLint, Prettier, Postman / Postman CLI, Git, GitHub, Bitbucket, Agile / Scrum</dd>
+</dl>
+
+<h2>Education</h2>
+<div class="edu">
+  <span><b>BS (Hons) Computer Science</b>, Lahore College for Women University, Lahore</span>
+  <span class="job__date">2016 – 2020 · CGPA 3.82 / 4.00</span>
+</div>
+
+</body>
+</html>
