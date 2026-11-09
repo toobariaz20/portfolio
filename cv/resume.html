@@ -4,13 +4,13 @@
 <meta charset="UTF-8">
 <title>Tooba Riaz - Senior Full Stack Engineer CV</title>
 <style>
-  @page { size: A4; margin: 13mm 14mm; }
+  @page { size: A4; margin: 11mm 13mm; }
   * { box-sizing: border-box; }
   body {
     margin: 0;
     font-family: "Segoe UI", Calibri, Arial, sans-serif;
-    font-size: 9.6pt;
-    line-height: 1.42;
+    font-size: 9.4pt;
+    line-height: 1.38;
     color: #1f2933;
   }
   a { color: inherit; text-decoration: none; }
@@ -20,7 +20,7 @@
   .contact { font-size: 8.8pt; color: #3e4c59; }
   .contact span + span::before { content: "·"; margin: 0 6px; color: #9aa5b1; }
   h2 {
-    margin: 12px 0 6px;
+    margin: 10px 0 5px;
     font-size: 10.5pt;
     text-transform: uppercase;
     letter-spacing: 1.2px;
@@ -68,8 +68,17 @@
   <b>PostgreSQL</b> and <b>Redis</b>, <b>React</b> dashboards, portals and edge-rendered websites, and native
   <b>Android</b> apps in Kotlin. I deploy them to <b>AWS</b> and <b>Cloudflare</b> with Docker and GitHub Actions.
   I have delivered <b>50+ Play Store apps</b> reaching <b>1M+ active users</b>, <b>10+ websites</b> and
-  <b>5+ dashboards and portals</b>, and have led cross-functional teams of 10+ engineers. I also integrate payments
-  (Stripe, Apple, Google Play) and AI (MCP servers, OpenAI, RAG).
+  <b>5+ dashboards and portals</b>, and have led cross-functional teams of 10+ engineers through Agile delivery,
+  sprint planning and client management. An experienced <b>AI-first developer</b>, I use Claude Code, Cursor, Codex,
+  Gemini and GitHub Copilot daily to ship faster, and I build AI features myself (MCP servers, OpenAI, RAG). I also
+  integrate payments (Stripe, Apple, Google Play).
+</p>
+
+<h2>Core Competencies</h2>
+<p class="summary">
+  Full Stack Development · System Architecture · API Design · AI Agents &amp; Automation · Team Leadership ·
+  Project Management · Agile / Scrum · Sprint Planning · Stakeholder &amp; Client Management · Mentoring &amp;
+  Code Reviews · Hiring &amp; Onboarding · Release Management · CI/CD
 </p>
 
 <h2>Work Experience</h2>
@@ -79,6 +88,8 @@
   <p class="job__role">Senior Full Stack Software Engineer | Team Lead</p>
   <ul>
     <li>Own end-to-end engineering of the Primefit fitness and membership platform across backend, web and mobile; lead and mentor the development team and work with product and stakeholders on delivery.</li>
+    <li>Run the team's delivery process: <b>sprint planning, backlog grooming, task estimation, stand-ups and retrospectives</b>; translate business requirements into technical specs and roadmaps, and report progress to management.</li>
+    <li>Introduced an <b>AI-assisted development workflow</b> (Claude Code, Cursor, Codex, Gemini, GitHub Copilot) with shared guidelines, agent docs and review rules, speeding up feature delivery while keeping code quality high.</li>
     <li>Architected a <b>schema-as-code Node.js / Express backend</b> in which JSON DSL models generate Sequelize models, PostgreSQL tables and role-protected CRUD APIs, with non-destructive schema sync for zero-data-loss releases.</li>
     <li>Built an <b>event-driven workflow engine on Redis + BullMQ</b> with a transactional outbox, replayer, dispatcher and scheduler, so business automations run reliably without duplicate or lost events.</li>
     <li>Delivered a <b>TypeScript membership API</b> (modular monolith) with Argon2 hashing, TOTP two-factor auth, Zod validation, Helmet, structured Pino logging and Umzug migrations.</li>
@@ -98,12 +109,13 @@
     <li>Designed scalable REST API contracts in Postman and optimised PostgreSQL schemas for faster, more reliable mobile data synchronisation.</li>
     <li>Mentored junior developers in Kotlin, Jetpack Compose and API integration, <b>reducing onboarding time by 40%</b>.</li>
     <li>Managed end-to-end delivery of high-traffic applications, including client communication, architecture decisions, server deployments and Google Play releases.</li>
+    <li>Planned sprints, assigned and tracked tasks in Jira, managed scope and timelines with clients, and ran requirement-gathering and demo sessions to keep projects on schedule.</li>
   </ul>
 </div>
 
 <div class="job">
   <div class="job__head"><span class="job__company">OZI Publishing</span><span class="job__date">Sep 2022 – Jan 2024</span></div>
-  <p class="job__role">Android Developer (Kotlin / Jetpack Compose)</p>
+  <p class="job__role">Software Engineer – Android (Kotlin / Jetpack Compose)</p>
   <ul>
     <li>Built high-performance, ad-driven Android apps used by <b>1M+ active users</b>; optimised AdMob placement (interstitial, app-open and rewarded ads) across user flows, <b>increasing ad revenue by 20%</b>.</li>
     <li>Led the adoption of Jetpack Compose for UI and state management, <b>cutting UI development time by 35%</b> and improving maintainability across app modules.</li>
@@ -114,7 +126,7 @@
 
 <div class="job">
   <div class="job__head"><span class="job__company">Tecjaunt</span><span class="job__date">Nov 2020 – Aug 2022</span></div>
-  <p class="job__role">Android Developer</p>
+  <p class="job__role">Software Engineer – Android</p>
   <ul>
     <li>Developed production-ready Android apps with backend developers and UI/UX designers for clients across e-commerce and other industries, contributing to <b>50+ apps shipped to the Play Store</b>.</li>
     <li>Built robust network layers with Retrofit and OkHttp, including error handling and caching, for real-time data synchronisation.</li>
@@ -132,8 +144,10 @@
   <dt>Cloud &amp; DevOps</dt><dd>AWS (EC2, S3), Cloudflare Workers, Vercel, Docker, Docker Compose, GitHub Actions CI/CD, Linux</dd>
   <dt>Payments</dt><dd>Stripe, Apple subscriptions, Google Play Billing, in-app purchases, Google AdMob</dd>
   <dt>Mobile</dt><dd>Jetpack Compose, MVVM, Clean Architecture, Dagger-Hilt, Retrofit / OkHttp, Coroutines, Flow, WorkManager, Navigation, Firebase (FCM, Crashlytics, Analytics), Google Maps, Play Console</dd>
-  <dt>AI / ML</dt><dd>MCP servers, OpenAI API, LangChain, RAG, Hugging Face Transformers, prompt engineering, Pandas, NumPy</dd>
-  <dt>Testing &amp; Tools</dt><dd>Jest, Vitest, Supertest, Testing Library, ESLint, Prettier, Postman / Postman CLI, Git, GitHub, Bitbucket, Agile / Scrum</dd>
+  <dt>AI Dev Tools</dt><dd>Claude &amp; Claude Code, Cursor, OpenAI Codex, ChatGPT, Google Gemini, GitHub Copilot, AI agents &amp; prompt-driven development</dd>
+  <dt>AI / ML</dt><dd>MCP servers, OpenAI API, Claude API, LangChain, RAG, Hugging Face Transformers, prompt engineering, Pandas, NumPy</dd>
+  <dt>Testing &amp; Tools</dt><dd>Jest, Vitest, Supertest, Testing Library, ESLint, Prettier, Postman / Postman CLI, Git, GitHub, Bitbucket</dd>
+  <dt>Project Mgmt</dt><dd>Jira, Confluence, Trello, ClickUp, Asana, Notion, Slack, Microsoft Teams, Figma (design handoff), Agile / Scrum, Kanban</dd>
 </dl>
 
 <h2>Education</h2>
