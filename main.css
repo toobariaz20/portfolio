@@ -614,7 +614,7 @@ strong {
 
 .skill-card__split {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(3, 1fr);
   gap: 3rem;
 }
 
@@ -863,7 +863,7 @@ strong {
 --------------------------------------------------------------*/
 .services__grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
 }
 
@@ -994,6 +994,14 @@ strong {
 
   .skill-card--span2 {
     grid-column: auto;
+  }
+
+  .skill-card__split {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .skill-card__split > div:last-child {
+    grid-column: 1 / -1;
   }
 
   .arch {
