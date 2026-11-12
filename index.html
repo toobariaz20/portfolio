@@ -271,13 +271,52 @@
             <div class="container">
                 <div class="section__header">
                     <span class="section__eyebrow">03 / Featured Work</span>
-                    <h2 class="section__title">The Primefit platform</h2>
+                    <h2 class="section__title">Mobile apps &amp; full stack platforms</h2>
                     <p class="section__lead">
-                        A fitness, coaching and membership business running on one connected platform: a core API,
-                        a membership service, four web frontends, an AI agent server and a native mobile app. I lead
-                        its engineering end to end.
+                        Native mobile apps come first: built, published and maintained on Google Play and the App
+                        Store. Behind them are the web, backend and AI platforms that power them.
                     </p>
                 </div>
+
+                <h3 class="work__subtitle work__subtitle--first"><i class="ri-smartphone-line"></i> Mobile apps</h3>
+                <div class="work__grid">
+                    <article class="project">
+                        <div class="project__head">
+                            <i class="ri-smartphone-fill"></i>
+                            <div><p class="project__type">Mobile · Native app</p><h3>Primefit Lifestyle App</h3></div>
+                        </div>
+                        <p>
+                            The native mobile app for members, built with Jetpack Compose. It integrates
+                            subscriptions, push notifications and crash monitoring with the platform API.
+                        </p>
+                        <ul class="tags"><li>Kotlin</li><li>Jetpack Compose</li><li>Hilt</li><li>Retrofit</li><li>Play Billing</li><li>FCM</li></ul>
+                    </article>
+
+                    <article class="project">
+                        <div class="project__head">
+                            <i class="ri-advertisement-fill"></i>
+                            <div><p class="project__type">Mobile · Revenue</p><h3>Ad &amp; Subscription Mobile Apps</h3></div>
+                        </div>
+                        <p>Ad-driven apps for 1M+ users at OZI Publishing. Better ad placement raised revenue 20%, and subscriptions raised retention 25%.</p>
+                        <ul class="tags"><li>Kotlin</li><li>Compose</li><li>AdMob</li><li>Billing</li></ul>
+                    </article>
+
+                    <article class="project">
+                        <div class="project__head">
+                            <i class="ri-store-2-fill"></i>
+                            <div><p class="project__type">Mobile · Client work</p><h3>50+ Client Mobile Apps</h3></div>
+                        </div>
+                        <p>E-commerce and business apps for many industries, published and maintained on Google Play and the App Store, with Retrofit network layers, offline caching and real-time sync.</p>
+                        <ul class="tags"><li>Kotlin</li><li>Retrofit</li><li>Room</li><li>Firebase</li><li>Play Console</li><li>App Store Connect</li></ul>
+                    </article>
+                </div>
+
+                <h3 class="work__subtitle"><i class="ri-stack-line"></i> Web, backend &amp; AI</h3>
+                <p class="work__lead">
+                    Primefit runs a fitness, coaching and membership business on one connected platform: a core API,
+                    a membership service, four web frontends, an AI agent server and a native mobile app. I lead its
+                    engineering end to end.
+                </p>
 
                 <!-- Architecture strip -->
                 <div class="arch" aria-label="Primefit platform architecture">
@@ -299,16 +338,24 @@
                 </div>
 
                 <div class="work__grid">
-                    <article class="project">
+                    <article class="project project--wide">
                         <div class="project__head">
-                            <i class="ri-smartphone-fill"></i>
-                            <div><p class="project__type">Mobile · Native app</p><h3>Primefit Lifestyle App</h3></div>
+                            <i class="ri-server-fill"></i>
+                            <div><p class="project__type">Backend · Architecture</p><h3>Core Platform API</h3></div>
                         </div>
                         <p>
-                            The native mobile app for members, built with Jetpack Compose. It integrates
-                            subscriptions, push notifications and crash monitoring with the platform API.
+                            A schema-as-code backend. JSON DSL model definitions are validated against a JSON Schema
+                            and materialised into Sequelize models, PostgreSQL tables and generic, role-protected CRUD
+                            endpoints. A non-destructive sync only widens the schema, so the data model can change
+                            without data loss.
                         </p>
-                        <ul class="tags"><li>Kotlin</li><li>Jetpack Compose</li><li>Hilt</li><li>Retrofit</li><li>Play Billing</li><li>FCM</li></ul>
+                        <ul class="project__points">
+                            <li>Event-driven workflow engine with a durable <strong>transactional outbox</strong>, replayer, dispatcher and time-based scheduler on <strong>Redis + BullMQ</strong>, with loop protection for self-triggering events.</li>
+                            <li>Auth with JWT/JOSE and opaque refresh sessions, bcrypt hashing in request pipelines, and per-model role ACLs.</li>
+                            <li>Stripe billing, Apple subscription reconciliation, Firebase push, Pusher realtime, transactional email, and S3 presigned uploads.</li>
+                            <li>Jest + Supertest suites, Postman collections kept in sync with the API docs, and Docker builds deployed by <strong>GitHub Actions to AWS EC2</strong>.</li>
+                        </ul>
+                        <ul class="tags"><li>Node.js</li><li>Express</li><li>PostgreSQL</li><li>Sequelize</li><li>Redis</li><li>BullMQ</li><li>Stripe</li><li>AWS</li><li>Docker</li><li>GitHub Actions</li></ul>
                     </article>
 
                     <article class="project">
@@ -342,26 +389,6 @@
                             <li>Rich Markdown and Mermaid editors for coaching content.</li>
                         </ul>
                         <ul class="tags"><li>React</li><li>TypeScript</li><li>Redux Toolkit</li><li>TanStack Query</li><li>Recharts</li><li>Pusher</li></ul>
-                    </article>
-
-                    <article class="project project--wide">
-                        <div class="project__head">
-                            <i class="ri-server-fill"></i>
-                            <div><p class="project__type">Backend · Architecture</p><h3>Core Platform API</h3></div>
-                        </div>
-                        <p>
-                            A schema-as-code backend. JSON DSL model definitions are validated against a JSON Schema
-                            and materialised into Sequelize models, PostgreSQL tables and generic, role-protected CRUD
-                            endpoints. A non-destructive sync only widens the schema, so the data model can change
-                            without data loss.
-                        </p>
-                        <ul class="project__points">
-                            <li>Event-driven workflow engine with a durable <strong>transactional outbox</strong>, replayer, dispatcher and time-based scheduler on <strong>Redis + BullMQ</strong>, with loop protection for self-triggering events.</li>
-                            <li>Auth with JWT/JOSE and opaque refresh sessions, bcrypt hashing in request pipelines, and per-model role ACLs.</li>
-                            <li>Stripe billing, Apple subscription reconciliation, Firebase push, Pusher realtime, transactional email, and S3 presigned uploads.</li>
-                            <li>Jest + Supertest suites, Postman collections kept in sync with the API docs, and Docker builds deployed by <strong>GitHub Actions to AWS EC2</strong>.</li>
-                        </ul>
-                        <ul class="tags"><li>Node.js</li><li>Express</li><li>PostgreSQL</li><li>Sequelize</li><li>Redis</li><li>BullMQ</li><li>Stripe</li><li>AWS</li><li>Docker</li><li>GitHub Actions</li></ul>
                     </article>
 
                     <article class="project">
@@ -404,27 +431,8 @@
                         </p>
                         <ul class="tags"><li>MCP SDK</li><li>TypeScript</li><li>Zod</li><li>PostgreSQL</li></ul>
                     </article>
-                </div>
 
-                <h3 class="work__subtitle">Other selected work</h3>
-                <div class="work__grid work__grid--compact">
-                    <article class="project project--compact">
-                        <div class="project__head">
-                            <i class="ri-advertisement-fill"></i>
-                            <div><p class="project__type">Mobile · Revenue</p><h3>Ad &amp; Subscription Mobile Apps</h3></div>
-                        </div>
-                        <p>Ad-driven apps for 1M+ users at OZI Publishing. Better ad placement raised revenue 20%, and subscriptions raised retention 25%.</p>
-                        <ul class="tags"><li>Kotlin</li><li>Compose</li><li>AdMob</li><li>Billing</li></ul>
-                    </article>
-                    <article class="project project--compact">
-                        <div class="project__head">
-                            <i class="ri-store-2-fill"></i>
-                            <div><p class="project__type">Mobile · Client work</p><h3>50+ Client Mobile Apps</h3></div>
-                        </div>
-                        <p>E-commerce and business apps for many industries, with Retrofit network layers, offline caching and real-time sync.</p>
-                        <ul class="tags"><li>Kotlin</li><li>Retrofit</li><li>Room</li><li>Firebase</li></ul>
-                    </article>
-                    <article class="project project--compact">
+                    <article class="project">
                         <div class="project__head">
                             <i class="ri-sparkling-2-fill"></i>
                             <div><p class="project__type">Full stack · AI</p><h3>AI Automation Agency Website</h3></div>

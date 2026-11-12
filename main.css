@@ -768,8 +768,25 @@ strong {
 }
 
 .work__subtitle {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
   font-size: var(--fs-xl);
   margin: 6rem 0 2.4rem;
+}
+
+.work__subtitle i {
+  color: var(--color-primary);
+}
+
+.work__subtitle--first {
+  margin-top: 0;
+}
+
+.work__lead {
+  max-width: 72rem;
+  font-size: 1.7rem;
+  margin: -1.2rem 0 2.4rem;
 }
 
 /* Experience
