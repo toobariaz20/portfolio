@@ -35,9 +35,9 @@ window.addEventListener("scroll", () => {
 // Typewriter
 const typewriterTexts = [
   "Senior Full Stack Engineer",
+  "Mobile Developer (Android & iOS)",
   "Node.js & TypeScript Backend Architect",
   "React Frontend Engineer",
-  "Android Engineer (Kotlin)",
   "Engineering Team Lead",
 ];
 

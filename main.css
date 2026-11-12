@@ -351,6 +351,14 @@ strong {
   gap: 5rem;
 }
 
+.hero__wrapper > * {
+  min-width: 0;
+}
+
+.main {
+  overflow-x: clip;
+}
+
 .hero__badge {
   display: inline-flex;
   align-items: center;
@@ -593,6 +601,36 @@ strong {
   color: var(--color-primary);
 }
 
+.skill-card--mobile {
+  grid-column: 1 / -1;
+  background:
+    linear-gradient(135deg, rgba(37, 171, 117, 0.1), transparent 60%),
+    var(--color-bg-card);
+}
+
+.skill-card--span2 {
+  grid-column: span 2;
+}
+
+.skill-card__split {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+}
+
+.skill-card__split h4 {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  font-size: var(--fs-md);
+  margin-bottom: 1.4rem;
+}
+
+.skill-card__split h4 i {
+  font-size: 2rem;
+  color: var(--color-primary);
+}
+
 /* Work
 --------------------------------------------------------------*/
 .arch {
@@ -639,6 +677,7 @@ strong {
 .work__grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  grid-auto-flow: dense;
   gap: 2rem;
 }
 
@@ -953,6 +992,10 @@ strong {
     grid-template-columns: repeat(2, 1fr);
   }
 
+  .skill-card--span2 {
+    grid-column: auto;
+  }
+
   .arch {
     grid-template-columns: 1fr;
   }
@@ -997,6 +1040,11 @@ strong {
   .work__grid,
   .services__grid {
     grid-template-columns: 1fr;
+  }
+
+  .skill-card__split {
+    grid-template-columns: 1fr;
+    gap: 2rem;
   }
 
   .project,
